@@ -17,7 +17,7 @@ object aurora {
 	
 	method altura() = 1
 	method recibirAtaque(potencia) {
-		estaViva = not potencia >= 10
+		estaViva = potencia < 10
 	}
 	method recibirTrabajo() {}
 	method otorgaValor() = 15
@@ -29,7 +29,7 @@ object tipa {
 	method altura() = altura
 	method recibirAtaque(potencia) {}
 	method recibirTrabajo() {
-		altura ++
+		altura = altura + 1
 	}
-	method otorgaValor() = altura * 2
+	method otorgaValor(){ return altura * 2}
 }

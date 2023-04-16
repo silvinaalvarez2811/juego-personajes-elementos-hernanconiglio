@@ -9,7 +9,11 @@ object floki {
 			elemento.recibirAtaque(arma.potencia())
 			arma.registrarUso()
 		}
-	} 
+	}	
+	method setArma(armaActual){
+		 arma = armaActual
+	}	
+	 
 	
 }
 
@@ -26,6 +30,3 @@ object mario {
 	method estaFeliz() = valorRecolectado >= 50 || ultimoElemento.altura() >= 10
 	method ultimoElemento() = ultimoElemento
 }
-
-
-
